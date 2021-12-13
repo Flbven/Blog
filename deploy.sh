@@ -23,6 +23,7 @@ else
   git config --global user.name "Flbven"
   git config --global user.email "1284850694@qq.com"
 fi
+
 git init
 git add -A
 git commit -m "${msg}"
