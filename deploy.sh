@@ -14,6 +14,7 @@ cd docs/.vuepress/dist
 
 if [ -z "$GITHUB_TOKEN" ]; then
   echo "Has gIT"
+  echo "${GITHUB_TOKEN}"
   msg='deploy'
   githubUrl=git@github.com:Flbven/MyBlog.git
 else
