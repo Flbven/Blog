@@ -12,6 +12,9 @@ cd docs/.vuepress/dist
 # deploy to github pages
 # echo 'b.xugaoyi.com' > CNAME
 
+# deploy to flbven.github.io
+git push -f git@github.com:Flbven/Flbven.github.io.git master
+
 if [ -z "$GITHUB_TOKEN" ]; then
   echo "Has gIT"
   echo "${GITHUB_TOKEN}"
