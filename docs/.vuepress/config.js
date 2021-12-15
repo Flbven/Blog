@@ -82,6 +82,7 @@ module.exports = {
           { text: '友情链接', link: '/friends/' },
         ],
       },
+      { text: 'C++', link: '/pages/43c156/'},
       { text: '关于', link: '/about/' },
       {
         text: '收藏',
