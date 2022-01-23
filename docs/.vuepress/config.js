@@ -9,6 +9,10 @@ module.exports = {
   description: 'web前端技术博客,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,React,python,css3,html5,Node,git,github等技术文章。',
   // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
 
+   markdown: {
+     lineNumbers: true,
+   },
+
   // 主题配置
   themeConfig: {
     // 导航配置
@@ -136,6 +140,14 @@ module.exports = {
 
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
   head: [
+    ['link', {
+      rel: 'stylesheet',
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.10.0-alpha/dist/katex.min.css'
+  }],
+  ['link', {
+      rel: "stylesheet",
+      href: "https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css"
+  }],
     ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
     [
       'meta',
@@ -163,7 +175,7 @@ module.exports = {
     //   color: '#11a8cd', // 爱心颜色，默认随机色
     //   excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
     // }],
-
+    'vuepress-plugin-mathjax',
     'vuepress-plugin-baidu-autopush', // 百度自动推送
 
     // 可以添加第三方搜索链接的搜索框（原官方搜索框的参数仍可用）
