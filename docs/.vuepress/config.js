@@ -31,6 +31,12 @@ module.exports = {
           },
         ]
       },
+      {
+        text: '其他', link: '/others',
+        items: [
+          {text: 'Leetcode周赛', link: '/note/leetcode/', }
+        ]
+      },
       { text: '关于', link: '/about/' },
       {
         text: '收藏',
